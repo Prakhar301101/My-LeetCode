@@ -18,10 +18,12 @@ class Solution {
             c++;
             t2=t2.next;
         }
+//      if there is only one node
         if(l==1){
             head=null;
             return head;
-        }    
+        }
+//     for deleting the last node     
         if(c==l&&l!=1){
             ListNode temp=head;
             while(p!=l-1){
@@ -31,6 +33,7 @@ class Solution {
             temp.next=null;
             return head;
         }
+//      for any other node
         t2.val=t2.next.val;
         t2.next=t2.next.next;
         return head;
