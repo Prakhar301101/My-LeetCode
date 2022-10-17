@@ -20,7 +20,6 @@ class Solution {
         }
         List<Integer> t=new ArrayList<>();
         t=preOrder(root);
-        System.out.println(t);
         for(int i=0;i<t.size()-1;i++){
             if(t.get(i)!=t.get(i+1)){
                 return false;
