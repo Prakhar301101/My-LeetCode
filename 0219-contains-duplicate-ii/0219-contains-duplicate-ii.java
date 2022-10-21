@@ -13,6 +13,7 @@ class Solution {
             }
             if(p>k){
                 s.remove(nums[i-k]);
+                p=i;
             }
         }
          return false;   
